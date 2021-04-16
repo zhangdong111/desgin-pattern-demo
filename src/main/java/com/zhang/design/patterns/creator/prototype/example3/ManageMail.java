@@ -23,7 +23,7 @@ public class ManageMail implements Runnable {
 
 
     public  void sendMail(){
-        Mail mail = mail = new Mail();
+        Mail mail =  new Mail();
         mail.setContext(this.context);
         mail.setSubject(this.subject);
         mail.setSender(this.sender);
