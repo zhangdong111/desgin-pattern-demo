@@ -8,7 +8,7 @@ public class Client {
 
 
 
-    public static void main1( String[] args) {
+    public static void main( String[] args) {
 
         Sender sender = Sender.builder()
                 .email("111@qq.com")
@@ -20,8 +20,8 @@ public class Client {
         Receiver receiver = null;
         for (int i = 0; i < 6; i++) {
             receiver = Receiver.builder()
-                    .email(Math.random() + "222@qq.com")
-                    .name(String.valueOf(Math.random()*10).substring(5) + "名字")
+                    .email(getRandString() + "222@qq.com")
+                    .name(getRandString() + "名字")
                     .build();
             receiverList.add(receiver);
         }
@@ -40,11 +40,6 @@ public class Client {
 
     }
 
-    public static void main(String[] args) {
-        for (int i = 0; i < 6; i++) {
-            getRandString();
-        }
-    }
 
     public static void sendMail(Mail mail){
         System.out.println("发送人 : " + mail.getSender().getName());
@@ -56,17 +51,13 @@ public class Client {
     }
 
     public static String getRandString(){
-        Double rand = Math.random();
-        String temp = rand.toString().substring(2,8);
-        char[] charArr = temp.toCharArray();
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < charArr.length; i++) {
-            int c = Integer.parseInt(String.valueOf(charArr[i]));
-            char charTo = (char)97;
-            System.out.println(charTo);
+        for (int i = 0; i < 6; i++) {
+            Double rand = Math.random();
+            String temp = rand.toString().substring(2,7);
+            char charTo = (char)(97+Integer.parseInt(temp));
             sb.append(charTo);
         }
-//        System.out.println(sb.toString());
         return sb.toString();
     }
 
