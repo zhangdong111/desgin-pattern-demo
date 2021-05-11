@@ -1,4 +1,4 @@
-package com.zhang.design.patterns.structural.bridge.extendsmode.pen;
+package com.zhang.design.patterns.structural.bridge.pen;
 
 public class SmallPen extends AbstractPen {
 

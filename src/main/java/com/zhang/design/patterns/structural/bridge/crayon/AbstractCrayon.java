@@ -1,7 +1,7 @@
-package com.zhang.design.patterns.structural.bridge.extendsmode.crayon;
+package com.zhang.design.patterns.structural.bridge.crayon;
 
-import com.zhang.design.patterns.structural.bridge.extendsmode.color.AbstractColor;
-import com.zhang.design.patterns.structural.bridge.extendsmode.pen.AbstractPen;
+import com.zhang.design.patterns.structural.bridge.color.AbstractColor;
+import com.zhang.design.patterns.structural.bridge.pen.AbstractPen;
 
 public abstract  class AbstractCrayon {
 
