@@ -11,7 +11,7 @@ public class Client {
 
         GamePlayerHandler handler = new GamePlayerHandler(gamePlayer);
 
-        IGamePlayer proxy = (IGamePlayer) Proxy.newProxyInstance(GamePlayer.class.getClassLoader(),GamePlayer.class.getInterfaces(),handler);
+        IGamePlayer proxy = (IGamePlayer) Proxy.newProxyInstance(GamePlayer.class.getClassLoader(), GamePlayer.class.getInterfaces(),handler);
 
         proxy.login();
 
