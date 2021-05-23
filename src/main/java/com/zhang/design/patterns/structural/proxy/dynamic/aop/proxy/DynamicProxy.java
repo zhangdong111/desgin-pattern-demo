@@ -14,6 +14,4 @@ public class DynamicProxy<T> {
         return (T) Proxy.newProxyInstance(classLoader,interfaces,handler);
     }
 
-
-
 }
