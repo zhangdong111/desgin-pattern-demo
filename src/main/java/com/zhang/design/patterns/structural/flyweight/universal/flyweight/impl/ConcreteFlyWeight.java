@@ -1,6 +1,6 @@
-package com.zhang.design.patterns.structural.flyweight.flyweight.impl;
+package com.zhang.design.patterns.structural.flyweight.universal.flyweight.impl;
 
-import com.zhang.design.patterns.structural.flyweight.flyweight.AbstractFlyWeight;
+import com.zhang.design.patterns.structural.flyweight.universal.flyweight.AbstractFlyWeight;
 
 public class ConcreteFlyWeight extends AbstractFlyWeight {
 

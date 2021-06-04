@@ -1,7 +1,7 @@
-package com.zhang.design.patterns.structural.flyweight.factory;
+package com.zhang.design.patterns.structural.flyweight.universal.factory;
 
-import com.zhang.design.patterns.structural.flyweight.flyweight.AbstractFlyWeight;
-import com.zhang.design.patterns.structural.flyweight.flyweight.impl.ConcreteFlyWeight;
+import com.zhang.design.patterns.structural.flyweight.universal.flyweight.AbstractFlyWeight;
+import com.zhang.design.patterns.structural.flyweight.universal.flyweight.impl.ConcreteFlyWeight;
 
 import java.util.HashMap;
 import java.util.Map;
