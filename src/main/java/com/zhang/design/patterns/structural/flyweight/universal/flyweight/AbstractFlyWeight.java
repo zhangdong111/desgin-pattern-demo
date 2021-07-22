@@ -1,4 +1,4 @@
-package com.zhang.design.patterns.structural.flyweight.flyweight;
+package com.zhang.design.patterns.structural.flyweight.universal.flyweight;
 
 public abstract class AbstractFlyWeight {
 
