@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 @Data
 @AllArgsConstructor
@@ -23,10 +24,11 @@ public class Mail implements  Cloneable{
     private String context;
 
     @Override
-    protected Mail clone(){
+    protected Mail clone() throws CloneNotSupportedException {
         Mail mail = null;
         try{
             mail = (Mail)super.clone();
+            mail.context = "新的字符串";
             return mail;
         }catch (CloneNotSupportedException e){
             System.err.println("发生异常 = > " + e.toString());

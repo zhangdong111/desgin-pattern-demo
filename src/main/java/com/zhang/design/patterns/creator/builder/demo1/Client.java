@@ -1,9 +1,9 @@
-package com.zhang.design.patterns.creator.builder;
+package com.zhang.design.patterns.creator.builder.demo1;
 
-import com.zhang.design.patterns.creator.builder.builder.AbstractCarBuidler;
-import com.zhang.design.patterns.creator.builder.builder.BenChiCarModelBuidler;
-import com.zhang.design.patterns.creator.builder.carmodel.AbstractCarModel;
-import com.zhang.design.patterns.creator.builder.carmodel.BenChiCarModel;
+import com.zhang.design.patterns.creator.builder.demo1.builder.AbstractCarBuidler;
+import com.zhang.design.patterns.creator.builder.demo1.builder.BenChiCarModelBuidler;
+import com.zhang.design.patterns.creator.builder.demo1.carmodel.AbstractCarModel;
+import com.zhang.design.patterns.creator.builder.demo1.carmodel.BenChiCarModel;
 
 import java.util.ArrayList;
 import java.util.List;

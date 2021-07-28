@@ -10,10 +10,18 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Receiver {
+public class Receiver implements  Cloneable{
 
     private String name;
 
     private String email;
+
+    @Override
+    public Receiver clone() throws CloneNotSupportedException {
+        Receiver clone = (Receiver) super.clone();
+        clone.name = new String(this.name);
+        return clone;
+    }
+
 
 }

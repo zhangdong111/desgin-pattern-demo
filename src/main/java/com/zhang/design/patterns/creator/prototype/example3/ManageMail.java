@@ -22,14 +22,14 @@ public class ManageMail implements Runnable {
     private List<Receiver> receivers;
 
 
-    public  void sendMail(){
+    private void sendMail(){
         Mail mail =  new Mail();
         mail.setContext(this.context);
         mail.setSubject(this.subject);
         mail.setSender(this.sender);
-        for (int i = 0; i < receivers.size(); i++) {
+        for (Receiver receiver : receivers) {
 //            mail = mail.clone();
-            mail.setReceiver(this.receivers.get(i));
+            mail.setReceiver(receiver);
 //            System.out.println("我是线程 : = >" + Thread.currentThread().getName());
 //            System.out.println("发送人 : " + mail.getSender().getName());
 //            System.out.println("发送人邮箱 : " + mail.getSender().getEmail());

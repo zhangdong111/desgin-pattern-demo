@@ -1,4 +1,4 @@
-package com.zhang.design.patterns.creator.builder.carmodel;
+package com.zhang.design.patterns.creator.builder.demo1.carmodel;
 
 import java.util.List;
 
@@ -19,11 +19,10 @@ public class BenChiCarModel extends  AbstractCarModel{
     @Override
     public void run() {
         String action = null;
-        for (int i = 0; i < this.sequence.size(); i++) {
-            action = this.sequence.get(i);
-
-            switch (action){
-                case  START :
+        for (String s : this.sequence) {
+            action = s;
+            switch (action) {
+                case START:
                     super.start();
                     break;
                 case STOP:

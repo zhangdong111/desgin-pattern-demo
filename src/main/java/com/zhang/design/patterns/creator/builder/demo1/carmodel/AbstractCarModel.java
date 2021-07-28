@@ -1,4 +1,4 @@
-package com.zhang.design.patterns.creator.builder.carmodel;
+package com.zhang.design.patterns.creator.builder.demo1.carmodel;
 
 import java.util.List;
 

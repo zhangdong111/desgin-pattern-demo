@@ -1,4 +1,4 @@
-package com.zhang.design.patterns.creator.factory.method.factory.factory3;
+package com.zhang.design.patterns.creator.factory.method.factory;
 
 import com.zhang.design.patterns.creator.factory.method.product.IProduct;
 
