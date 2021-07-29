@@ -8,20 +8,18 @@ import com.zhang.design.patterns.creator.builder.demo2.entity.Person;
  */
 public abstract class AbstractPersonBuilder {
 
+    Person person = new Person();
 
-    protected Person builder(){
-        return new Person();
-    }
 
-    protected abstract Person body(String body);
+    public abstract AbstractPersonBuilder body(String body);
 
-    protected abstract Person gender(Boolean gender);
+    public abstract AbstractPersonBuilder gender(Boolean gender);
 
-    protected abstract Person head(String head);
+    public abstract AbstractPersonBuilder head(String head);
 
-    protected abstract Person arms(String arms);
+    public abstract AbstractPersonBuilder arms(String arms);
 
-    protected abstract Person leg(String leg);
+    public abstract AbstractPersonBuilder leg(String leg);
 
     public abstract Person build();
 
